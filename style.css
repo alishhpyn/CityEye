@@ -332,6 +332,7 @@ main {
     font-size: 16px;
 }
 
+
 /* ---- Form Style ---- */
 
 input,
@@ -341,8 +342,29 @@ textarea {
     margin: 5px 0 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: "Segoe UI", sans-serif;
+    box-sizing: border-box;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2878e8;
+}
+
+input[type="submit"] {
+    background-color: #2878e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a5bb8;
+}
 
 
 /* ---- Reports Table ---- */
@@ -454,3 +476,12 @@ footer p {
     text-align: center;
 }
 
+ol {
+    list-style-position: inside; 
+    text-align: center;          
+    padding: 0;                  
+}
+
+.welcome{
+    margin-top: 60px;
+}
